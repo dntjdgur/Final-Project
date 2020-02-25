@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Machine Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+          <img src="../static/images/PL-Lion.png" alt="Premiere League" width="60%"> 
+					<h1>English Premiere League</h1>
+					<p>By Sungbae Lee, Steve Woo, Johnseth Chong, and Gideon Victor </p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Match Predictor</a>
+				</footer>
+			</section>
+
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>English Premiere League</h2>
+				</header>
+				<div id="sample-metadata" class="panel-body">
+          <table style="width:100%" >
+            {%for index in data%} 
+            <tr>
+              <th>{{ index.date }}</th>
+              <th>{{ index.homeTeam }} Win</th>
+              <th>Draw</th>
+              <th>{{ index.awayTeam }} Win</th>
+              
+            </tr>
+            <tr>
+              <th>{{ index.time }}</th>
+              <th>{{ index.homeProp }}</th>
+              <th>{{ index.drawProp }}</th>
+              <th>{{ index.awayProp }}</th>
+            </tr>
+            <tr>
+              <th></th>
+            </tr>
+            {%endfor%}
+          </table> 
+        </div>
+				<footer>
+					<a href="#first" class="button style2 scrolly">Pay Us for Our Work in Bitcoin</a>
+				</footer>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.scrolly.min.js"></script>
+			<script src="../static/js/jquery.poptrox.min.js"></script>
+			<script src="../static/js/browser.min.js"></script>
+			<script src="../static/js/breakpoints.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>
