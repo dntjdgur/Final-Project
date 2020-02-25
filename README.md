@@ -12,4 +12,4 @@
 ![Poisson](/photo/poisson.png)
 
 ### Brief Overview of the Predictor Statistics Result
-![Statistics](/photo/windrawlose.jpg)
+![Statistics](/photo/windrawlose.JPG)
